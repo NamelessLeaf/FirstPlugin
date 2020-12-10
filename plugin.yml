@@ -1,0 +1,3 @@
+name: FirstPlugin
+main: NamelessLeaf/FirstPlugin
+version: "1.0.0"
