@@ -1,8 +1,10 @@
 name: FirstPlugin
-main: NamelessLeaf/FirstPlugin
-version: "1.0.0"
+main: NamelessLeaf\SkyWarsPE
+version: "1.0.0-BETA"
 api: 3.0.0+ALPHA9
 author: NamelessLeaf
 commands:
- testcmd:
-   description: "Testing A Command
+  cmdone:
+    description: Command
+    default: true
+    permission: sw.command
