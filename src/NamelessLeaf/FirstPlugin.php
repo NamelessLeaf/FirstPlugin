@@ -1,6 +1,6 @@
 <?php
 
-namespace Inactive-to-Reactive;
+namespace NamelessLeaf;
 
 use pocketmine\plugin\PluginBase;
 
