@@ -1,28 +1,39 @@
-<php?
-     
-namespace NamelessLeaf;
+<?php
+
+namespace Inactive-to-Reactive;
+
+use pocketmine\plugin\PluginBase;
+
+use pocketmine\event\player\PlayerJoinEvent;
+
+use pocketmine\event\player\PlayerQuitEvent;
 
 use pocketmine\Player;
+
 use pocketmine\Server;
-     
-use pocketmine\plugin\PluginBase;
-use pocketmine\command\Command;      
-use pocketmine\command\CommandSender;
-      
-use pocketmine\event\EventListener;
-use pocketmine\player\PlayerJoinEvent;
 
-use pocketmine\utils\TextFormat;
+use pocketmine\event\Listener;
 
-class Main extends pluginbase implements Listener {
-      
-      public Function onEnable() {
-          $this->getServer()->getPluginManager()->registerEvents($this , $this)
-      }
-          
-          }      
-      
-      
+use pocketmine\utils\TextFormat as C;
+
+class Inactive-to-ReactiveExample extends PluginBase implements Listener{
+
+          public function onLoad(){
+                    $this->getLogger()->info("Plugin Loading");
+          }
+          public function onEnable(){
+                    $this->getServer()->getPluginManager()->registerEvents($this,$this);
+		    $this->getLogger()->info("Enabled Plugin");
+          }
+          public function onDisable(){
+                    $this->getLogger()->info("Plugin Disabled");
+          }
+	  public function onJoin(PlayerJoinEvent $event){
+  		 $player = $event->getPlayer();
+   		$name = $player->getName();
+   		$this->getServer()->broadcastMessage(C::GREEN."$name Joined The Inactive-to-Reactive test Server! Awesome!");
+	}
+}
       
       
       
