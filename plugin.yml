@@ -1,3 +1,8 @@
 name: FirstPlugin
 main: NamelessLeaf/FirstPlugin
 version: "1.0.0"
+api: 3.0.0+ALPHA9
+author: NamelessLeaf
+commands:
+ testcmd:
+   description: "Testing A Command
