@@ -3,7 +3,7 @@ build-by-default: true
 branches:
 - main
 projects: 
-FirstPlugin:
-path ""
-libs
+   FirstPlugin:
+   path ""
+   libs
 ...
