@@ -1,0 +1,7 @@
+name: FirstPlugin
+main: NameLessLeaf\FirstPlugin
+author:
+- CrowBaldeYT
+-NamelessLeaf
+api: 3.0.0
+version: 1.0.0
