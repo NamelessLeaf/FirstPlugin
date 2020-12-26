@@ -1,9 +1,0 @@
-name: FirstPlugin
-main: NamelessLeaf\SkyWarsPE
-version: "1.0.0-BETA"
-api: 3.0.0+ALPHA9
-author: NamelessLeaf
-commands:
-  cmdone:
-    description: Command
-    default: true
