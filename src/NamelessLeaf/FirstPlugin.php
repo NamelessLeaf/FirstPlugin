@@ -34,7 +34,7 @@ use pocketmine\utils\TextFormat as C;
 	  public function onJoin(PlayerJoinEvent $event){
   		 $player = $event->getPlayer();
    		$name = $player->getName();
-   		$this->getSergetServerver()->broadcastMessage(C::GREEN."$name Joined The Inactive-to-Reactive test Server! Awesome!");
+   		$this->getServer()->broadcastMessage(C::GREEN."$name Joined The Inactive-to-Reactive test Server! Awesome!");
 	}
 	public function onQuit(PlayerQuitEvent $event){
 	$player = $event->getPlayer();  //This gets the player
